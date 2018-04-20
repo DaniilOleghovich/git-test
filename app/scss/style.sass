@@ -1,0 +1,29 @@
+
+@import smart-grid.sass
++reset()
+
+body
+  background: grey
+  height: 1000px
+  width: 100%
+
+.container
+  +row-flex()
+  +md(justify-content, center)
+  +xs(justify-content, center)
+
+
+  .block
+    +col()
+    +size(12)
+    +size-md(5)
+    +size-xs(10)
+    background: red
+    margin-top: 5px
+    width: 100px
+    max-width: 100px
+    height: 100px
+
+    .content
+      font-size: 20px
+      color: #fff
